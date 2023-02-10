@@ -44,3 +44,25 @@ function barraSkills(){
 }
 
 skillsHeader.forEach((el) => el.addEventListener('click', barraSkills))
+
+//================== Calificacion trabajo====================//
+
+
+const tabs = document.querySelectorAll('[data-target]'),
+      tabsConten = document.querySelectorAll('[data-content]');
+
+tabs.forEach(tab=>{
+  tab.addEventListener('click', () =>{
+    const target = document.querySelector(tab.dataset.target)
+
+    tabsConten.forEach(tabContents => {
+      tabContents.classList.remove('quali__active')
+    })
+    target.classList.add('quali__active')
+
+    tabs.forEach(tab => {
+      tab.classList.remove('quali__active')
+    })
+    tab.classList.add('quali__active')
+  })
+})
