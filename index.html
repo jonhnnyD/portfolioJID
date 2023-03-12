@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="css/style.css">
   <!-- iconos importados -->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <!-- swipe bar -->
+  <!-- <link rel="stylesheet" href="css/swiper-bundle.min.css"> -->
 
   <title>J.I.D/Porfolio</title>
 </head>
@@ -467,10 +469,56 @@
 
       </div>
     </section>
+    <section class="portfolio section" id="portfolio">
+      <h2 class="section__title">Portfolio</h2>
+      <span class="section__subtitle">Most recent work</span>
+
+      <div class="portfolio__conteiner contenedor swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- ===============Portfolio1============= -->
+          <div class="portfolio__content grid swiper-slide">
+            <img src="img/Captura-paginavasanello.PNG" alt="pagina-responsive-it" class="portfolio__img">
+
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Website Responsive</h3>
+              <p class="portfolio__description">Website adaptable to all divaces, animated iteractions</p>
+
+              <a href="work-portfolio/vasanello-web-responsive-it/home.html" target="_blank" class="button button--flex button--samll portfolio__button">
+                Demo
+                <i class="uil uil-angle-double-right button__icon"></i>
+              </a>
+
+            </div>
+          </div>
+          <!-- ===============Portfolio2============= -->
+          <div class="portfolio__content grid swiper-slide">
+            <img src="img/team-proficent.PNG" alt="page-responsive" class="portfolio__img">
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Website active</h3>
+              <p class="portfolio__description">Website </p>
+
+              <a href="https://teamproficient.com/" target="_blank" class="button button--flex button--samll portfolio__button">
+                Demo
+                <i class="uil uil-angle-double-right button__icon"></i>
+              </a>
+
+            </div>
+          </div>
+          
+        <!-- </div>
+        <div class="swiper-button-next ">
+          <i class="uil uil-angle-double-right portfolio-button-icon"></i>
+        </div>
+        <div class="swiper-button-prev">
+          <i class="uil uil-angle-double-left portfolio-button-icon"></i>
+        </div>
+        <div class="swiper-pagination"></div> -->
+      </div>
+    </section>
 
   </main>
 
-  <script src=""></script>
+  <script src="javascript/swiper-bundle.min.js"></script>
   <script src="javascript/main.js"></script>
 </body>
 </html>
